@@ -30,7 +30,7 @@ def read_historical_data(ticker_symbol):
     df = df.set_index(pd.DatetimeIndex(df['Date']))
     df = df.drop('Date', 1)
 
-    return df['2017-03-21':'2017-02-01']
+    return df
         
 # main fn
 def get_price_history(ticker_symbol):
